@@ -30,8 +30,7 @@ developing applications that use %{name}.
 %build
 autoreconf -fiv
 %configure \
-  --disable-silent-rules \
-  --disable-static
+  --disable-silent-rules 
 
 make %{?_smp_mflags}
 
@@ -58,5 +57,5 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 
 
 %changelog
-* Thu Jan 15 2015 Daniel Menet <daniel.menet@swisstxt.ch> -%{version}-%{release}
-- Initial release based on https://github.com/lkiesow/matterhorn-rpms/blob/master/specs/fdk-aac.spec
+* Thu Mar 28 2013 Nicolas Chauvet <kwizart@gmail.com> - 0.1.1-1
+- Initial spec
