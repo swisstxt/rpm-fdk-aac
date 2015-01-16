@@ -53,6 +53,7 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %dir %{_includedir}/fdk-aac
 %{_includedir}/fdk-aac/*.h
 %{_libdir}/*.so
+%{_libdir}/*.a
 %{_libdir}/pkgconfig/%{name}.pc
 
 
