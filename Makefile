@@ -16,6 +16,7 @@ clean:
 
 getsources:
 	wget  -P ./SOURCES/ -q http://downloads.sourceforge.net/project/opencore-amr/fdk-aac/fdk-aac-${VERSION}.tar.gz
+	
 build: clean getsources
 	cp -r ./SPECS/* ./rpmbuild/SPECS/ || true
 	cp -r ./SOURCES/* ./rpmbuild/SOURCES/ || true
